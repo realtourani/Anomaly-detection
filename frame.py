@@ -1,5 +1,9 @@
 # import necessary libraries
 import cv2
+import os
+
+if not os.path.exists("frames"): # A condition that if the directory is not exist create it
+    os.makedirs("frames")
 
 cap = cv2.VideoCapture('videos/video1_with_anomalies.mp4') # read video
 
